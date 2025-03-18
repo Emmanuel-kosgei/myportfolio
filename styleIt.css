@@ -24,6 +24,172 @@ header {
     padding: 10px 0;
     margin-bottom: 30px;
 }
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Navigation */
+.header-nav {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #3498db;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-container img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.name-description h1 {
+    font-size: 40px;
+    font-family: 'Cambria', serif;
+}
+
+.name-description h2 {
+    font-size: 25px;
+    color: orangered;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #e67e22;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d35400;
+}
+
+/* Projects and Services Section */
+.projects-services {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects, .services {
+    width: 48%;
+}
+
+.projects h2, .services h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.projects ul, .services ol {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.projects li, .services li {
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 20px;
+    }
+
+    .main-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects, .services {
+        width: 100%;
+    }
+}
+
 
 .header nav ul {
     list-style-type: none;
