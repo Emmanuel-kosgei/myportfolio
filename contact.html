@@ -1,33 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF 8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="styleIt.css">
-    </head>
-    <body>
-        <header>
-            <div class="header">    
-                 <nav>
-                    <ul>
-                        <a href="home.html">HOME</a> 
-                        <a href="about.html">ABOUT</a>
-                       <a href="services.html">SERVICES</a>
-                        <a href="products.html">PRODUCTS</a>
-                        <a href="contact.html">CONTACT</a>
-                    </ul>
-                </nav>
-            </div>
-             </header>
-             <h1>any comment,inguiry or help ? please indicate below </h1>
-            <b>Name </b> <input type="text"><br><br>
-             Email <input type="email"><br><br>
-             subject <input type="text"><br><br>
-             <textarea name="" id="" cols="30" rows="10"></textarea>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleIt.css">
+    <title>Contact Us</title>
+</head>
+<body>
 
-             <h1>reach me</h1>
-            <h2>Tel: <a class="cont">0758520495</h2></a>
-            <h2>Email: <a class="cont">webspaida@gmail.com</h2></a>
+    <!-- Header Section -->
+    <header>
+        <div class="header">    
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li> 
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    </body>
+    <!-- Main Content Section -->
+    <section class="contact-form-section">
+        <h1>Any Comment, Inquiry, or Help? Please Indicate Below</h1>
+
+        <!-- Contact Form -->
+        <form action="" method="post" class="contact-form">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="subject"><b>Subject:</b></label>
+            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required><br><br>
+
+            <label for="message"><b>Message:</b></label>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Enter your message" required></textarea><br><br>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <!-- Contact Info Section -->
+        <div class="contact-info">
+            <h1>Reach Me</h1>
+            <h2>Tel: <a class="cont" href="tel:0758520495">0758520495</a></h2>
+            <h2>Email: <a class="cont" href="mailto:webspaida@gmail.com">webspaida@gmail.com</a></h2>
+        </div>
+    </section>
+
+</body>
 </html>
